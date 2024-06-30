@@ -66,6 +66,7 @@ He creado primero un contenedor para ver las propiedades del mismo docker create
 
 **Modificar el archivo index.html para incluir su nombre**
 **¿Cuántos pasos se han ejecutado? ¿Observa algo diferente en la creación de la imagen**
+## Parece que no se ven afectados por el contenido de la imagen, solo en la creación de los parámetros necesarios de la imagen en sí
 
 ## Mecanismo de caché
 Docker usa un mecanismo de caché cuando crea imágenes para acelerar el proceso de construcción y evitar la repetición de pasos que no han cambiado. Cada instrucción en un Dockerfile crea una capa en la imagen final. Docker intenta reutilizar las capas de una construcción anterior si no han cambiado, lo que reduce significativamente el tiempo de construcción.
@@ -77,14 +78,14 @@ Docker usa un mecanismo de caché cuando crea imágenes para acelerar el proceso
 
 ### Crear un contenedor a partir de las imagen creada, mapear todos los puertos
 ```
-
+docker run -P example:1.0
 ```
 
 ### ¿Con que puerto host se está realizando el mapeo?
-# COMPLETAR CON LA RESPUESTA
+# El puerto 32768 al puerto guest 80
 
 **¿Qué es una imagen huérfana?**
-# COMPLETAR CON LA RESPUESTA
+# Una imagen que no está asociada con ningún contenedor en ejecución
 
 ### Identificar imágenes huérfanas
 ```
