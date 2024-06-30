@@ -57,10 +57,12 @@ docker build -t example:1.0 .
 ```
 
 **¿Cuántos pasos se han ejecutado?**
-# RESPONDER 
+# Han sido 9 pasos de construcción, y cada uno con sus pasos internos
 
 ### Inspeccionar la imagen creada
+He creado primero un contenedor para ver las propiedades del mismo docker create --name contenedor example:1.0
 # COMPLETAR CON UNA CAPTURA
+![image](https://github.com/JorMath/2024A-ISWD633-Practica4/assets/94020880/0f04b1dc-a669-4162-afc3-90dff02df9e3)
 
 **Modificar el archivo index.html para incluir su nombre**
 **¿Cuántos pasos se han ejecutado? ¿Observa algo diferente en la creación de la imagen**
