@@ -11,6 +11,10 @@ Asignar núcleos de CPU específicos:
 
 **¿Como saber el numero de procesadores virtuales que tiene una máquina?**
 ## COMPLETAR
+Se puede utilizar el siguiente comando: 
+```
+docker inspect <nombre_del_contenedor> | grep "Cpus"
+```
 
 ## Ejemplos
 _Puedes copiar y ejecutar directamente cada uno de los comandos_
